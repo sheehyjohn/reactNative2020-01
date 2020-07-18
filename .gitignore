@@ -1,6 +1,7 @@
 # from Section 2  - Chapter 39 - .gitignore
 node_modules/**/*
 .expo/*
+.expo/
 npm-debug.*
 *.jks
 *.p12
