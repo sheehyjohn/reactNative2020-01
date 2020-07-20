@@ -9,7 +9,8 @@ export const fetchProducts = () => {
   return async dispatch => {
     // any async code you want!
     const response = await fetch(
-      'https://rn-complete-guide.firebaseio.com/products.json'
+    //  'https://rn-complete-guide.firebaseio.com/products.json'
+        'https://rn-2020-01.firebaseio.com/products.json',
     );
 
     const resData = await response.json();
