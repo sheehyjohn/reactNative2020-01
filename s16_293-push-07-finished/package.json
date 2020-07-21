@@ -30,7 +30,7 @@
     "redux-thunk": "^2.3.0",
     "react-native-gesture-handler": "~1.6.0",
     "expo-notifications": "~0.3.3",
-    "expo-permissions": "~9.0.1" 
+    "expo-permissions": "~9.0.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^8.2.3",
