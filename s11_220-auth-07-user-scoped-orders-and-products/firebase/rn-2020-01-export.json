@@ -1,0 +1,29 @@
+{
+  "products" : {
+    "-MChadwPMBzPH0w02Dh0" : {
+      "description" : "this is a test for app",
+      "imageUrl" : "https://cdn.pixabay.com/photo/2016/10/02/22/17/red-t-shirt-1710578_1280.jpg",
+      "price" : 10,
+      "title" : "red tshirt 1"
+    },
+    "-MChbv2uyYL40JecZ83h" : {
+      "description" : "TV",
+      "imageUrl" : "https://cdn.pixabay.com/photo/2016/11/21/12/10/tv-1844964_960_720.jpg",
+      "price" : 20,
+      "title" : "Just the telly for DS9..so cool"
+    },
+    "-MChe0D0nbR9NoMdzVhS" : {
+      "description" : "Cardhdhdhdjdjdjdjd\n",
+      "imageUrl" : "https://cdn.pixabay.com/photo/2019/07/12/12/49/vw-4332807_960_720.jpg",
+      "price" : 20,
+      "title" : "Car"
+    },
+    "-MCi7f6t_9utMrcPvc7d" : {
+      "description" : "Hshshshdhddhdhd",
+      "imageUrl" : "Asdf.jpg",
+      "ownerId" : "JojGKw73frR8T5e0A6TZiMUM3GC2",
+      "price" : 20,
+      "title" : "John test"
+    }
+  }
+}
