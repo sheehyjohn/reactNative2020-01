@@ -29,10 +29,16 @@ export default function App() {
         }
       })
       .then(() => {
+          console.log('--gettingToken');
         return Notifications.getExpoPushTokenAsync();
       })
       .then((response) => {
         const token = response.data;
+        console.log('--token - response.data');
+        console.log(token);
+        console.log('--token - response.data');
+      //ExponentPushToken[t6VEHbJ35bnOSKbmFKO5-o]   //As of 200722
+      
         setPushToken(token);
       })
       .catch((err) => {
@@ -81,7 +87,7 @@ export default function App() {
       body: JSON.stringify({
         to: pushToken,
         data: { extraData: 'Some data' },
-        title: 'Sent via the app',
+        title: 'Sent via the app-01',
         body: 'This push notification was sent via the app!',
       }),
     });
