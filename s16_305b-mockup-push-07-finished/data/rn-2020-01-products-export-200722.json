@@ -1,0 +1,27 @@
+{
+  "-MChadwPMBzPH0w02Dh0" : {
+    "description" : "Contracts For Difference (CFDs) are specialised and popular Over The Counter (OTC) which enable you to trade on the price movement of financial assets  Shares and Exchange Traded Funds",
+    "imageUrl" : "https://cdn.pixabay.com/photo/2014/11/01/22/33/gold-513062_960_720.jpg",
+    "price" : 1000,
+    "title" : "Gold"
+  },
+  "-MChbv2uyYL40JecZ83h" : {
+    "description" : "Contracts For Difference (CFDs) are specialised and popular Over The Counter (OTC) which enable you to trade on the price movement of financial assets  Shares and Exchange Traded Funds",
+    "imageUrl" : "https://cdn.pixabay.com/photo/2020/04/22/20/35/oil-prices-5079975_960_720.jpg",
+    "price" : 20,
+    "title" : "Oil"
+  },
+  "-MChe0D0nbR9NoMdzVhS" : {
+    "description" : "Contracts For Difference (CFDs) are specialised and popular Over The Counter (OTC) which enable you to trade on the price movement of financial assets  Shares and Exchange Traded Funds",
+    "imageUrl" : "https://cdn.pixabay.com/photo/2019/07/12/12/49/vw-4332807_960_720.jpg",
+    "ownerId" : "NGFB2mxYRYaCaoNfqvNvU2Oyp973",
+    "price" : 144.34,
+    "title" : "VOW3 - Volkswagen Group"
+  },
+  "-MCiDTFnj01hjHUULbM7" : {
+    "description" : "Contracts For Difference (CFDs) are specialised and popular Over The Counter (OTC) which enable you to trade on the price movement of financial assets  Shares and Exchange Traded Funds",
+    "imageUrl" : "https://cdn.pixabay.com/photo/2013/07/12/17/49/motherboard-152501_960_720.png",
+    "price" : 20,
+    "title" : "Electronics"
+  }
+}
