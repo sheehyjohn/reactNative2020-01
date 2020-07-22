@@ -110,7 +110,7 @@ const ProductsOverviewScreen = props => {
           />
           <Button
             color={Colors.primary}
-            title="To Cart"
+            title="Make Trade"
             onPress={() => {
               dispatch(cartActions.addToCart(itemData.item));
             }}
@@ -123,7 +123,7 @@ const ProductsOverviewScreen = props => {
 
 export const screenOptions = navData => {
   return {
-    headerTitle: 'All Products',
+    headerTitle: 'Trade Notifications',
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
