@@ -107,7 +107,7 @@ const AuthScreen = props => {
       keyboardVerticalOffset={50}
       style={styles.screen}
     >
-      <LinearGradient colors={['#ffedff', '#ffe3ff']} style={styles.gradient}>
+      <LinearGradient colors={['#007DFF', '#003E7F']} style={styles.gradient}>
         <Card style={styles.authContainer}>
           <ScrollView>
             <Input
@@ -161,7 +161,7 @@ const AuthScreen = props => {
 };
 
 export const screenOptions = {
-  headerTitle: 'Authenticate'
+  headerTitle: 'Titan X Trading'
 };
 
 const styles = StyleSheet.create({

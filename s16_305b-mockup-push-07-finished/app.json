@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RN Guide",
-    "slug": "rn-complete-guide",
+    "name": "TitanX",
+    "slug": "titan-x-trading",
     "privacy": "public",
     "sdkVersion": "38.0.0",
     "platforms": [
@@ -15,7 +15,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
