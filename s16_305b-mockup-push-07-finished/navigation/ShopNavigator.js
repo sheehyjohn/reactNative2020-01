@@ -169,7 +169,7 @@ export const ShopNavigator = () => {
     <ShopDrawerNavigator.Navigator
       drawerContent={props => {
         return (
-          <View style={{ flex: 1, paddingTop: 20 }}>
+          <View style={{ flex: 1, paddingTop: 50 }}>
             <SafeAreaView forceInset={{ top: 'always', horizontal: 'never' }}>
               <DrawerItemList {...props} />
               <Button
@@ -189,7 +189,8 @@ export const ShopNavigator = () => {
       }}
     >
       <ShopDrawerNavigator.Screen
-        name="Products"
+        //name="Products"
+        name="Trade Notifcations"
         component={ProductsNavigator}
         options={{
           drawerIcon: props => (
