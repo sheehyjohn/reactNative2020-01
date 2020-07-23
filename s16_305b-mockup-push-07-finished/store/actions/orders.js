@@ -44,6 +44,7 @@ export const addOrder = (cartItems, totalAmount) => {
     const response = await fetch(
       //`https://rn-push-58aba.firebaseio.com/orders/${userId}.json?auth=${token}`,
       `https://rn-2020-01.firebaseio.com/orders/${userId}.json?auth=${token}`,
+      //`https://rn-2020-01.firebaseio.com/orders/u1`,
       {
         method: 'POST',
         headers: {
