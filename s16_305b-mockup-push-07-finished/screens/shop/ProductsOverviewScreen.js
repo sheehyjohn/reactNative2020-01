@@ -110,7 +110,8 @@ const ProductsOverviewScreen = props => {
           />
           <Button
             color={Colors.primary}
-            title="Make Trade"
+            //title="Make Trade"
+            title="Order Now"
             onPress={() => {
               dispatch(cartActions.addToCart(itemData.item));
             }}
