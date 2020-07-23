@@ -70,7 +70,8 @@ const UserProductsScreen = props => {
 
 export const screenOptions = navData => {
   return {
-    headerTitle: 'Your Products',
+    //headerTitle: 'Your Products',
+    headerTitle: 'UserProductScreen.js',
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
