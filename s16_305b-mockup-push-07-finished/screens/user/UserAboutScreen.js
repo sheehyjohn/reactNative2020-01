@@ -1,12 +1,27 @@
 import React from 'react';
-import { View, Text, FlatList, Button, Platform, Alert, StyleSheet } from 'react-native';
+import { View, Text, FlatList, Button, Platform, Alert, 
+         StyleSheet,
+         Card, Image,
+         TouchableOpacity,
+         TouchableNativeFeedback,
+        } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
 import HeaderButton from '../../components/UI/HeaderButton';
-import ProductItem from '../../components/shop/ProductItem';
+//import ProductItem from '../../components/shop/ProductItem';
 import Colors from '../../constants/Colors';
-import * as productsActions from '../../store/actions/products';
+//import * as productsActions from '../../store/actions/products'; 
+//import Card from '../UI/Card';
+
+/*
+const ProductItem = props => {
+    let TouchableCmp = TouchableOpacity;
+  
+    if (Platform.OS === 'android' && Platform.Version >= 21) {
+      TouchableCmp = TouchableNativeFeedback;
+    }
+*/
 
 const UserAboutScreen = props => {
   const userProducts = useSelector(state => state.products.userProducts);
@@ -30,13 +45,42 @@ const UserAboutScreen = props => {
   };
 
   if (userProducts.length === 0) {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>About Screen</Text>
-      </View>
+    return ( 
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>About Screen</Text>
+        </View>
+         
+      
     );
   }
 
+
+/*
+ <Card style={styles.product}>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text>About Screen</Text>
+      </View>
+        <View style={styles.touchable}>
+          
+            <View>
+              <View style={styles.imageContainer}>
+                <Image style={styles.image} source={{ uri: "https://cdn.pixabay.com/photo/2014/11/01/22/33/gold-513062_960_720.jpg"}} />
+              </View>
+              <View style={styles.details}>
+                <Text style={styles.title}>asdf</Text>
+                <Text style={styles.price}>asdf</Text>
+              </View>
+              <View style={styles.actions}>
+              <Text style={styles.price}>asdf</Text>
+              </View>
+            </View>
+          
+        </View>
+      </Card> 
+*/
+
+
+/*
   return (
      
     <FlatList
@@ -69,6 +113,7 @@ const UserAboutScreen = props => {
     />
      
   );
+  */
 };
 
 export const screenOptions = navData => {
@@ -90,10 +135,10 @@ export const screenOptions = navData => {
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
           title="Add"
-          iconName={Platform.OS === 'android' ? 'md-create' : 'ios-create'}
-          onPress={() => {
-            navData.navigation.navigate('EditProduct');
-          }}
+          iconName={Platform.OS === 'android' ? 'md-construct' : 'ios-construct'}
+          //onPress={() => {
+          //  navData.navigation.navigate('EditProduct');
+          //}}
         />
       </HeaderButtons>
     )
@@ -144,4 +189,6 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20
     }
   });
+
+
 export default UserAboutScreen;
