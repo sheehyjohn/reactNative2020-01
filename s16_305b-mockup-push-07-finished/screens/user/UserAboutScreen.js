@@ -46,11 +46,26 @@ const UserAboutScreen = props => {
 
   if (userProducts.length === 0) {
     return ( 
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>About Screen</Text>
-        </View>
          
-      
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <Text style={styles.h1}>About Screen</Text>
+                
+                <View style={styles.imageContainer}>
+                    {/*
+                        <Image style={styles.image} source={{ uri: "https://cdn.pixabay.com/photo/2014/11/01/22/33/gold-513062_960_720.jpg"}} />                
+                        <Image style={styles.image} source={{ require: "./assets/splash.png"}} />                
+                    */}
+                     <Image style={styles.image} source={require("../../assets/splash.png")}  />                
+               
+                </View>
+                <Text style={styles.details}>Lorem Ipsom</Text>
+                <Text style={styles.details}>Version: 1.b.c</Text>
+                <Text style={styles.details}>Release: 28th August 2020</Text>
+                
+                
+            </View>
+         
+        
     );
   }
 
@@ -151,15 +166,20 @@ const styles = StyleSheet.create({
       height: 300,
       margin: 20
     },
+    h1:{
+        fontSize: 44
+    },
     touchable: {
       borderRadius: 10,
       overflow: 'hidden'
     },
     imageContainer: {
-      width: '100%',
-      height: '60%',
+      width: '80%',
+      height: '45%',
       borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
+      borderBottomLeftRadius: 10,
+      borderBottomRightRadius: 10,
       overflow: 'hidden'
     },
     image: {
@@ -168,7 +188,7 @@ const styles = StyleSheet.create({
     },
     details: {
       alignItems: 'center',
-      height: '17%',
+      height: '10%',
       padding: 10
     },
     title: {
