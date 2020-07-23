@@ -23,6 +23,13 @@ import OrdersScreen, {
 import UserProductsScreen, {
   screenOptions as userProductsScreenOptions
 } from '../screens/user/UserProductsScreen';
+
+
+import UserAboutScreen, {
+    screenOptions as UserAboutScreenOptions
+  } from '../screens/user/UserAboutScreen';
+ 
+
 import EditProductScreen, {
   screenOptions as editProductScreenOptions
 } from '../screens/user/EditProductScreen';
@@ -141,6 +148,26 @@ export const AdminNavigator = () => {
   );
 };
 
+const AboutStackNavigator = createStackNavigator();
+
+export const AboutNavigator = () => {
+  return (
+    <AboutStackNavigator.Navigator screenOptions={defaultNavOptions}>
+      <AboutStackNavigator.Screen
+        name="UserAbout"
+        component={UserAboutScreen}
+        options={UserAboutScreenOptions}
+      />
+      <AboutStackNavigator.Screen
+        name="EditAbout"
+        component={EditProductScreen}
+        options={editProductScreenOptions}
+      />
+    </AboutStackNavigator.Navigator>
+  );
+};
+
+ 
 // const AdminNavigator = createStackNavigator(
 //   {
 //     UserProducts: UserProductsScreen,
@@ -222,6 +249,20 @@ export const ShopNavigator = () => {
           drawerIcon: props => (
             <Ionicons
               name={Platform.OS === 'android' ? 'md-create' : 'ios-create'}
+              size={23}
+              color={props.color}
+            />
+          )
+        }}
+      />
+      <ShopDrawerNavigator.Screen
+        name="About Us"
+        component={AboutNavigator}
+        options={{
+          drawerIcon: props => (
+            <Ionicons
+              //name={Platform.OS === 'android' ? 'md-question' : 'ios-create'}
+              name={Platform.OS === 'android' ? 'md-construct' : 'ios-create'}
               size={23}
               color={props.color}
             />
